@@ -11,6 +11,14 @@
 	<body>
 		<canvas width="250" height="250" id="myCanvas"></canvas>
 		
+		<form id="canvasForm">
+			<label>x <input type="text" name="x" size="3" value="10"></label>
+			<label>y <input type="text" name="y" size="3" value="15" ></label>
+		    <label>color <input type="text" name="color" size="7" value="#0000ff"></label>
+			<label>radius <input type="text" name="radius" size="3" value="20"></label>
+			<input type="submit" value="Draw Circle">
+		</form>
+		
 		
 		<script>
 			var canvas = document.getElementById('myCanvas');
