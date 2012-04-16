@@ -22,21 +22,18 @@
 			form.addEventListener('submit', function(event) {
 				event.preventDefault();
 				
-				canvas.addEventListener('mousemove', function(event) {
-					console.log('mousemove at (%o, %o)', event.offsetX, event.offsetY);
-				
 				drawCircle(form.x.value, form.y.value, form.radius.value, form.color.value);
 			});
 			
 			function drawCircle(x, y, radius, color)
 			{
 				
-				draw a circle and fill it in
+				//draw a circle and fill it in
 				ctx.beginPath();
 				ctx.arc(x, y, radius, 0, Math.PI*2, true);
 				ctx.closePath();
 				
-				set the fill color to red
+				//set the fill color to red
 				ctx.fillStyle= color || "#FF0000";
     			ctx.fill();
 			}
